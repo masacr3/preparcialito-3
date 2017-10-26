@@ -13,6 +13,7 @@ def suma_acumulativa(self):
 	while actual:
 		acumulador += actual.value
 		lista_nueva.push(acumulador)
+		actual = actual.sig
 	
 	return lista_nueva
 	
