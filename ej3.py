@@ -7,7 +7,7 @@ def remover_duplicados_consecutivos(pila):
 	while not pila.esta_vacia():
 		value = pila.desapila()
 		if value not in lista:
-			fila.append(value)
+			lista.append(value)
 		
 	for i in range(len(lista)):
 		pila.apila(lista.pop())
