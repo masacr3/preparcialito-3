@@ -2,7 +2,8 @@ def suma_acumulativa(self):
 	if not self.primero:
 		return None
 	
-	lista_nueva = ListaEnlazada(self.primero.value)
+	lista_nueva = ListaEnlazada()
+	lista_nueva.push(self.primero.value)
 	
 	if not self.primero.sig:
 		return lista_nueva
